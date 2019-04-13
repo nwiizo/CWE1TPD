@@ -1,0 +1,8 @@
+<table>
+<% @title_all.each do |titles| %>
+  <tr>
+	  <td><p> <a href="./title_id/<%= titles.values[0] %>"><%= titles.values[2] %></a> </p></td>
+	  <td> <%= titles.values[3] %> </td>
+  </tr>
+<% end %>
+<table>
