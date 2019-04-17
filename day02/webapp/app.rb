@@ -14,9 +14,13 @@ get '/' do
 end
 
 get '/new' do
-  title_sql = "select * from films_title"
-  @title_all = client.query(title_sql)
-  "#{@title_all}"
+  @new_hash = []
+  for num in 1..10 do
+    sql_new = "select * from films_title ORDER BY title_id desc limit 1 OFFSET #{num}" 
+    sql_new = client.query(sql_new)
+    @new_hash.push(sql_new)
+  end
+  erb :new, :layout => :mylayout
 end
 
 get '/post' do
