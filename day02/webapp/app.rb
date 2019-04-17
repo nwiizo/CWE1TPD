@@ -7,8 +7,6 @@ require 'yaml'
 # Import files for database
 client = Mysql2::Client.new(YAML.load_file('database.yml'))
 
-
-
 get '/' do
   title_sql = "select * from films_title"
   @title_all = client.query(title_sql)
@@ -66,9 +64,6 @@ get "/all" do
   @title_all = client.query(title_sql)
   erb :all, :layout => :mylayout
 end
-
-
-
 
 get '/saishin' do
   sql_saishin = "select * from films_title ORDER BY title_id desc limit 10"
