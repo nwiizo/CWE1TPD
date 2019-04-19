@@ -1,9 +1,11 @@
 # Question
 ## Q1.Simple Routing
-DestinationRule And VirtualService
-## Q2.アドバンスドルーティング
-HTTPヘッダーに基づいてルーティングを決定する方法を学び、きめ細かいコード変更のロールアウト
-## Q3.カオスインジェクション
-分散アプリケーションコンポーネント間のネットワークの障害や遅延を注入して、それらがどのように動作するかを確認するIstioの機能を実証します。
-## Q4.サーキットブレーカ
-## Q5.出口管理
+ Gateway及びVirtualServiceに関する課題
+## Q2.Advanced Routing(1)
+DestinationRule及びServiceEntryに関する課題
+## Q3.Chaos Injection
+コンポーネント間のネットワークの障害や遅延を注入していく課題
+## Q4.Circuit Breaker
+回線遮断、プール排出、再試行に関する課題
+## Q5.Managing Egress
+ネットワークトラフィックを出力に関する課題
