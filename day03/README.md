@@ -1,7 +1,7 @@
 # Question
 ## Q1.Simple Routing
  Gateway及びVirtualServiceに関する課題
-## Q2.Advanced Routing(1)
+## Q2.Advanced Routing
 DestinationRule及びServiceEntryに関する課題
 ## Q3.Chaos Injection
 コンポーネント間のネットワークの障害や遅延を注入していく課題
